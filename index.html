@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#7a1f1f">
+<meta name="description" content="Himalaya Dhaba & Cafe Restaurant – table booking, menu, contact and location.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="styles.css">
+<title>Himalaya Dhaba & Cafe Restaurant</title>
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>HIMALAYA DHABA</h1>
+    <p>Himalaya Dhaba & Cafe Restaurant</p>
+  </div>
+  <a class="btn" href="#booking">Book a Table</a>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <span class="pill">Open Daily · 11:00 AM – 11:00 PM</span>
+    <h2>Good Food. Great Place. Easy Booking.</h2>
+    <p>Book your table, view the menu, contact us or find us on Google Maps.</p>
+    <div class="actions">
+      <a class="btn" href="#booking">Book Now</a>
+      <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Himalaya+dhaba+and+cafe+restaurant+Bus+Stop+Dwaraka+Hesarghatta+Rd+Chikkabanavara+Bengaluru+Karnataka+560090" target="_blank" rel="noopener">Open Maps</a>
+    </div>
+  </div>
+</section>
+
+<section id="booking" class="card">
+<h2>Table Booking</h2>
+<p class="muted">Choose an available table and submit your details.</p>
+<div class="tables">
+  <button data-table="HUT-G1">HUT-G1</button><button data-table="HUT-G2">HUT-G2</button>
+  <button data-table="HUT-G3">HUT-G3</button><button data-table="HUT-G4">HUT-G4</button>
+  <button data-table="HUT-G5">HUT-G5</button><button data-table="HUT-G6">HUT-G6</button>
+  <button data-table="HUT-G7">HUT-G7</button><button data-table="HUT-G8">HUT-G8</button>
+  <button data-table="HUT-G9">HUT-G9</button><button data-table="HUT-G10">HUT-G10</button>
+  <button data-table="HUT-G11">HUT-G11</button><button data-table="HUT-G12">HUT-G12</button>
+  <button data-table="HUT-G13">HUT-G13</button><button data-table="HUT-G14">HUT-G14</button>
+  <button data-table="HUT-G15">HUT-G15</button><button data-table="HUT-G16">HUT-G16</button>
+  <button data-table="HUT-G17">HUT-G17</button><button data-table="HUT-G18">HUT-G18</button>
+  <button data-table="AC1">AC1</button><button data-table="AC2">AC2</button>
+  <button data-table="AC3">AC3</button><button data-table="AC4">AC4</button>
+  <button data-table="AC5">AC5</button><button data-table="AC6">AC6</button>
+  <button data-table="FH1">FH1</button><button data-table="FH2">FH2</button>
+  <button data-table="FH3">FH3</button><button data-table="FH4">FH4</button>
+  <button data-table="FH5">FH5</button><button data-table="FH6">FH6</button>
+  <button data-table="FH7">FH7</button><button data-table="FH8">FH8</button>
+  <button data-table="FH9">FH9</button><button data-table="FH10">FH10</button>
+  <button data-table="FH11">FH11</button><button data-table="FH12">FH12</button>
+  <button data-table="FH13">FH13</button><button data-table="FH14">FH14</button>
+  <button data-table="FH15">FH15</button><button data-table="FH16">FH16</button>
+  <button data-table="FH17">FH17</button><button data-table="FH18">FH18</button>
+  <button data-table="FH19">FH19</button><button data-table="FH20">FH20</button>
+  <button data-table="FH21">FH21</button><button data-table="FH22">FH22</button>
+  <button data-table="FH23">FH23</button><button data-table="FH24">FH24</button>
+  <button data-table="FH25">FH25</button>
+  <button data-table="L01">L01</button><button data-table="L02">L02</button>
+  <button data-table="L03">L03</button><button data-table="L04">L04</button>
+  <button data-table="L05">L05</button>
+</div>
+<form id="bookingForm">
+  <input id="table_id" placeholder="Selected table" readonly required>
+  <input id="name" placeholder="Your name" required>
+  <input id="phone" placeholder="Phone number" required inputmode="tel">
+  <input id="date" type="date" required>
+  <input id="time" type="time" required>
+  <input id="guests" type="number" min="1" max="50" placeholder="Guests" required>
+  <textarea id="note" placeholder="Special request (optional)"></textarea>
+  <button class="btn" type="submit">Send Booking Request</button>
+</form>
+<div id="bookingMessage"></div>
+</section>
+
+<section class="grid">
+<div class="card"><h2>🍽️ Menu</h2><p>Veg, non-veg, noodles, pasta, gravies and more.</p><p class="muted">Menu items can be managed from the admin panel after the database is connected.</p></div>
+<div class="card"><h2>⭐ Feedback</h2><form id="feedbackForm"><input id="fName" placeholder="Name" required><textarea id="fText" placeholder="Your feedback" required></textarea><button class="btn" type="submit">Submit Feedback</button></form><div id="feedbackMessage"></div></div>
+</section>
+
+<section class="card">
+<h2>📍 Visit Us</h2>
+<p>Himalaya dhaba and cafe restaurant Bus Stop, Dwaraka, Hesarghatta Rd, Chikkabanavara, Bengaluru, Karnataka 560090</p>
+<p><b>Dhaba:</b> 8062429561</p>
+<p><b>Manager:</b> Lekhraj Singh · 9742417787</p>
+<p><b>Hours:</b> Every day, 11:00 AM – 11:00 PM</p>
+<div class="actions">
+<a class="btn" href="tel:+918062429561">Call Dhaba</a>
+<a class="btn secondary" href="https://wa.me/919742417787" target="_blank" rel="noopener">WhatsApp Manager</a>
+</div>
+</section>
+</main>
+<footer>© Himalaya Dhaba & Cafe Restaurant</footer>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
